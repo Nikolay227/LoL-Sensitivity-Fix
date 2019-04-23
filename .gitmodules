@@ -1,3 +1,6 @@
 [submodule "FlatUI"]
 	path = FlatUI
 	url = https://github.com/0x25CBFC4F/FlatUI
+[submodule "ConfigurationManager"]
+	path = ConfigurationManager
+	url = https://github.com/0x25CBFC4F/ConfigurationManager
