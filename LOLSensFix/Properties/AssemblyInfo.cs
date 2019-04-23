@@ -5,12 +5,12 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("LOLSensFix")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyTitle("LSF")]
+[assembly: AssemblyDescription("LoL Sensitivity Fix")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("LOLSensFix")]
-[assembly: AssemblyCopyright("Copyright ©  2019")]
+[assembly: AssemblyCompany("null / 0x25CBFC4F")]
+[assembly: AssemblyProduct("LSF")]
+[assembly: AssemblyCopyright("https://github.com/0x25CBFC4F")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 

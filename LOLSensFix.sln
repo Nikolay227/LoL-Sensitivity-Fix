@@ -1,11 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.28307.329
+VisualStudioVersion = 15.0.27428.2015
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LOLSensFix", "LOLSensFix\LOLSensFix.csproj", "{ED4A17A1-0352-40AE-BF6A-A2E6E144278C}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FlatUI", "FlatUI\src\FlatUI\FlatUI.csproj", "{FC508337-0212-4F3B-88FE-5C9FF09F4D47}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{FD0F7D13-42D5-4B6F-B000-C1A394B48FDD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -26,6 +28,6 @@ Global
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {3D73D7F0-F49A-4CFF-8F65-1B4AAF605FDD}
+		SolutionGuid = {DD06DD5A-C5D8-4420-8EF2-BFB085052490}
 	EndGlobalSection
 EndGlobal
