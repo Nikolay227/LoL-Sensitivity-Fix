@@ -75,5 +75,11 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\FlatUI\src\FlatUI\FlatUI.csproj">
+      <Project>{fc508337-0212-4f3b-88fe-5c9ff09f4d47}</Project>
+      <Name>FlatUI</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
