@@ -30,6 +30,7 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
+            this.sensitivityChecker = new System.Windows.Forms.Timer(this.components);
             this.formSkin = new FlatUI.FormSkin();
             this.exitButton = new FlatUI.FlatButton();
             this.hideButton = new FlatUI.FlatButton();
@@ -37,7 +38,6 @@
             this.sensTrackBar = new FlatUI.FlatTrackBar();
             this.setCurrentButton = new FlatUI.FlatButton();
             this.startWithWindowsCheckbox = new FlatUI.FlatCheckBox();
-            this.sensitivityChecker = new System.Windows.Forms.Timer(this.components);
             this.notifyIcon = new System.Windows.Forms.NotifyIcon(this.components);
             this.flatContextMenuStrip = new FlatUI.FlatContextMenuStrip();
             this.projectPageItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -46,6 +46,12 @@
             this.formSkin.SuspendLayout();
             this.flatContextMenuStrip.SuspendLayout();
             this.SuspendLayout();
+            // 
+            // sensitivityChecker
+            // 
+            this.sensitivityChecker.Enabled = true;
+            this.sensitivityChecker.Interval = 1000;
+            this.sensitivityChecker.Tick += new System.EventHandler(this.sensitivityChecker_Tick);
             // 
             // formSkin
             // 
@@ -158,12 +164,6 @@
             this.startWithWindowsCheckbox.Text = "Start with Windows";
             this.startWithWindowsCheckbox.CheckedChanged += new FlatUI.FlatCheckBox.CheckedChangedEventHandler(this.startWithWindowsCheckbox_CheckedChanged);
             // 
-            // sensitivityChecker
-            // 
-            this.sensitivityChecker.Enabled = true;
-            this.sensitivityChecker.Interval = 1000;
-            this.sensitivityChecker.Tick += new System.EventHandler(this.sensitivityChecker_Tick);
-            // 
             // notifyIcon
             // 
             this.notifyIcon.BalloonTipIcon = System.Windows.Forms.ToolTipIcon.Info;
@@ -184,24 +184,24 @@
             this.exitItem});
             this.flatContextMenuStrip.Name = "flatContextMenuStrip";
             this.flatContextMenuStrip.ShowImageMargin = false;
-            this.flatContextMenuStrip.Size = new System.Drawing.Size(140, 54);
+            this.flatContextMenuStrip.Size = new System.Drawing.Size(156, 76);
             // 
             // projectPageItem
             // 
             this.projectPageItem.Name = "projectPageItem";
-            this.projectPageItem.Size = new System.Drawing.Size(139, 22);
+            this.projectPageItem.Size = new System.Drawing.Size(155, 22);
             this.projectPageItem.Text = "Visit project page";
             this.projectPageItem.Click += new System.EventHandler(this.projectPageItem_Click);
             // 
             // separatorItem
             // 
             this.separatorItem.Name = "separatorItem";
-            this.separatorItem.Size = new System.Drawing.Size(136, 6);
+            this.separatorItem.Size = new System.Drawing.Size(152, 6);
             // 
             // exitItem
             // 
             this.exitItem.Name = "exitItem";
-            this.exitItem.Size = new System.Drawing.Size(139, 22);
+            this.exitItem.Size = new System.Drawing.Size(155, 22);
             this.exitItem.Text = "Exit";
             this.exitItem.Click += new System.EventHandler(this.exitItem_Click);
             // 

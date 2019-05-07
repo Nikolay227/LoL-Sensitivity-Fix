@@ -74,7 +74,7 @@ namespace LOLSensFix
 
         private void projectPageItem_Click(object sender, EventArgs e)
         {
-            Process.Start("https://github.com/0x25CBFC4F");
+            Process.Start("https://github.com/0x25CBFC4F/LoL-Sensitivity-Fix");
         }
 
         private void exitItem_Click(object sender, EventArgs e)
