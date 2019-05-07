@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Windows.Forms;
 using LOLSensFix.Configuration;
+using LOLSensFix.Utils;
 
 namespace LOLSensFix
 {

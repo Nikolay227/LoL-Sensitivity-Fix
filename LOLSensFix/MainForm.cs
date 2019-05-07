@@ -8,6 +8,8 @@ namespace LOLSensFix
 {
     public partial class MainForm : Form
     {
+        private bool _firstShow;
+
         public MainForm()
         {
             InitializeComponent();
@@ -92,6 +94,18 @@ namespace LOLSensFix
         {
             AutorunManager.SetAutorunning(startWithWindowsCheckbox.Checked);
             startWithWindowsCheckbox.Checked = AutorunManager.IsAutorunning();
+        }
+
+        private void MainForm_Shown(object sender, EventArgs e)
+        {
+            if(_firstShow) return;
+
+            _firstShow = true;
+
+            if (AutorunManager.ShouldRunSilently())
+            {
+                Hide();
+            }
         }
     }
 }

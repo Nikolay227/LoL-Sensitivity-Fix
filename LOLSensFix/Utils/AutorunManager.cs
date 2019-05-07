@@ -15,6 +15,15 @@ namespace LOLSensFix.Utils
                 "LSF");
         }
 
+        public static bool ShouldRunSilently()
+        {
+            var args = Environment.GetCommandLineArgs().Skip(1);
+
+            return args.Any(
+                arg =>
+                    arg.Equals("-silent", StringComparison.InvariantCultureIgnoreCase));
+        }
+
         public static void SetAutorunning(bool autorun)
         {
             if (!IsAdministrator())
@@ -35,7 +44,8 @@ namespace LOLSensFix.Utils
             {
                 if (!hasValue)
                 {
-                    runKey.SetValue("LSF", Environment.GetCommandLineArgs()[0]);
+                    runKey.SetValue("LSF", 
+                        $"\"{Environment.GetCommandLineArgs()[0]}\" -silent");
                 }
             }
             else

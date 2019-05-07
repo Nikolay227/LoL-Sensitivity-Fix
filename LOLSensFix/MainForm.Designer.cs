@@ -224,6 +224,7 @@
             this.TransparencyKey = System.Drawing.Color.Fuchsia;
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.MainForm_FormClosing);
             this.Load += new System.EventHandler(this.Form1_Load);
+            this.Shown += new System.EventHandler(this.MainForm_Shown);
             this.formSkin.ResumeLayout(false);
             this.flatContextMenuStrip.ResumeLayout(false);
             this.ResumeLayout(false);
