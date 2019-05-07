@@ -29,8 +29,9 @@ namespace LOLSensFix
         private void sensitivityChecker_Tick(object sender, EventArgs e)
         {
             var prcs = Process.GetProcessesByName("LeagueClient");
+            var prcs2 = Process.GetProcessesByName("League of Legends");
 
-            if (prcs.Length == 0)
+            if (prcs.Length == 0 && prcs2.Length == 0)
             {
                 return;
             }
